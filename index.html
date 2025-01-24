@@ -3,22 +3,52 @@
     <title>Lilisam</title>
     <link rel="icon" type="image/x-icon" href="/logo.png">
     <style>
+        .body{
+            margin: 0;
+            padding: 20px;
+            background-color: #bcbcbd;
+        }
         .container {
-            height: 100%;
+            height: 95%;
             display: flex;
+            margin: 0;
+            padding: 0;
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
         .message{
-            font-family: Sylfaen;
+            font-size: 25px;
+            font-family: Candara, sans-serif;
+        }
+        .email{
+            color: black;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .image {
+            max-width: 100%;
+            width: 400px;
+            height: auto;
+            border: 1px solid #000;
+        }
+        @media (max-width: 500px) {
+            .message {
+                font-size: 18px;
+                text-align: center
+            }
+            .email {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
-<body>
+<body class="body">
 <div class='container'>
-<img src="image.png" width="400" height="170" border="1px"/>
-    <h1 class="message">This site is under development.</h1>
+    <img class="image" src="image.png" alt="Lilisam logo"/>
+    <h1 class="message">The website is undergoing technical work.</h1>
 </div>
+<a class="email" href="mailto:store@lilisam.com">Email address</a>
 </body>
 </html>
